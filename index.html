@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ReportLab</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slippry.css" />
+    <link rel="stylesheet" href="css/jquery.slicknav.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
+    <!-- TweenLite 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="three.r92.min.js"></script>
+    <script src="vanta.dots.min.js"></script> -->
+    <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <link href="css/custom.css" rel="stylesheet">
+<link rel="icon" href="http://example.com/favicon.png">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Gupter|Montserrat&display=swap');
+a, a:hover, a:visited, a:active, a:focus { color: #fff;   text-decoration: none;} /* CSS link color */
+.footer-copyright {font-size: 10px; color: #faefe2; margin-bottom: 40px; text-align: center;}
+
+.container {
+    position: center;
+} 
+
+#footer {
+    background: #05051f;
+    height: 2%;
+    width: 100%;
+    position: relative;
+} 
+
+.button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid #df595a;
+  display: inline-block;
+  border-radius: 7px;
+  color: #fff ! important; 
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+    margin-top: 18px;
+    margin-right: 3%;
+    display: inline-block;
+    float: right;
+}
+
+.button:hover {
+  background-color: #df595a;
+  text-transform: uppercase;
+  border: 0px solid #df595a;
+  display: inline-block;
+  border-radius: 7px;
+  color: #fff !important;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+    text-decoration: none;
+
+}
+
+.button:visited,
+.button:focus,
+.button:active {
+  background-color: #df595a;
+  text-transform: uppercase;
+  border: 0px solid #7f7fdd;
+  display: inline-block;
+  border-radius: 7px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+    text-decoration: none;
+}
+
+.testobottone {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+}  
+
+@media only screen 
+and (min-width : 576px) {
+.button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid #df595a;
+  display: inline-block;
+  border-radius: 7px;
+  color: #fff ! important; 
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+    margin-top: -18px;
+    margin-left: 65vw;
+    display: inline-block;
+    float: left;
+}
+
+.button:hover {
+  background-color: #df595a;
+  text-transform: uppercase;
+  border: 0px solid #df595a;
+  display: inline-block;
+  border-radius: 7px;
+  color: #fff !important;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+    text-decoration: none;
+
+}
+
+.button:visited,
+.button:focus,
+.button:active {
+  background-color: #df595a;
+  text-transform: uppercase;
+  border: 0px solid #7f7fdd;
+  display: inline-block;
+  border-radius: 7px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+    text-decoration: none;
+}
+
+.testobottone {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+} 
+
+.btn {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid #df595a;
+  display: inline-block;
+  border-radius: 7px;
+  color: #fff ! important; 
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  text-decoration: none;
+    margin-top: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.btn:hover {
+  background-color: #df595a;
+  text-transform: uppercase;
+  border: 0px solid #df595a;
+  display: inline-block;
+  border-radius: 7px;
+  color: #fff !important;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn:visited,
+.btn:focus,
+.btn:active {
+  background-color: #df595a;
+  text-transform: uppercase;
+  border: 0px solid #7f7fdd;
+  display: inline-block;
+  border-radius: 7px;
+  color: white;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+    text-decoration: none;
+}
+
+.testobottone {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+} 
+
+@media only screen 
+and (min-width : 576px) and (max-width : 768px){
+#video {
+    width: 300%; 
+    border: 2px solid #7f7fdd;
+    object-position:center;
+    position: center;
+    border-radius: 10px;
+}
+
+}
+} 
+
+</style>
+</head>
+
+<body>
+
+
+
+<!--
+<div class="container5 container-fluid"> <svg class="background__lights" id="lines" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 1920 1080" xml:space="preserve" preserveAspectRatio="none">
+        <g class="lines">
+            <rect class="line" x="1253.6" width="4.5" height="1080"></rect>
+            <rect class="line" x="873.3" width="1.8" height="1080"></rect>
+            <rect class="line" x="1100" width="1.8" height="1080"></rect>
+            <rect class="line" x="1547.1" width="4.5" height="1080"></rect>
+            <rect class="line" x="615" width="4.5" height="1080"></rect>
+            <rect class="line" x="684.6" width="1.8" height="1080"></rect>
+            <rect class="line" x="1369.4" width="1.8" height="1080"></rect>
+            <rect class="line" x="1310.2" width="0.9" height="1080"></rect>
+            <rect class="line" x="1233.4" width="0.9" height="1080"></rect>
+            <rect class="line" x="124.2" width="0.9" height="1080"></rect>
+            <rect class="line" x="1818.4" width="4.5" height="1080"></rect>
+            <rect class="line" x="70.3" width="4.5" height="1080"></rect>
+            <rect class="line" x="1618.6" width="1.8" height="1080"></rect>
+            <rect class="line" x="455.9" width="1.8" height="1080"></rect>
+            <rect class="line" x="328.7" width="1.8" height="1080"></rect>
+            <rect class="line" x="300.8" width="4.6" height="1080"></rect>
+            <rect class="line" x="1666.4" width="0.9" height="1080"></rect>
+        </g>
+        <g class="lights">
+            <path class="light1 light" d="M619.5,298.4H615v19.5h4.5V298.4z M619.5,674.8H615v9.8h4.5V674.8z M619.5,135.1H615v5.6h4.5V135.1z         M619.5,55.5H615v68.7h4.5V55.5z"></path>
+            <path class="light2 light" d="M1258.2,531.9h-4.5v8.1h4.5V531.9z M1258.2,497.9h-4.5v17.9h4.5V497.9z M1258.2,0h-4.5v25.3h4.5V0z         M1258.2,252.2h-4.5v42.4h4.5V252.2z"></path>
+            <path class="light3 light" d="M875.1,123.8h-1.8v4h1.8V123.8z M875.1,289.4h-1.8v24.1h1.8V289.4z M875.1,0h-1.8v31.4h1.8V0z M875.1,50.2         h-1.8v11.5h1.8V50.2z"></path>
+            <path class="light4 light" d="M1101.8,983.8h-1.8v8.2h1.8V983.8z M1101.8,1075.9h-1.8v4.1h1.8V1075.9z M1101.8,873.7h-1.8v4.2h1.8V873.7z         M1101.8,851h-1.8v18.2h1.8V851z"></path>
+            <path class="light5 light" d="M686.4,822.7h-1.8v3.8h1.8V822.7z M686.4,928.4h-1.8v23h1.8V928.4z M686.4,1043.8h-1.8v36.2h1.8V1043.8z"></path>
+            <path class="light6 light" d="M1551.6,860.9h-4.4v-34.1h4.4V860.9z M1551.6,533.5h-4.4v-13.9h4.4V533.5z M1551.6,1080h-4.4v-89.1h4.4V1080z"></path>
+            <path class="light7 light" d="M1311.1,707.7h-0.9V698h0.9V707.7z M1311.1,436.8h-0.9v-58.9h0.9V436.8z M1311.1,140.7h-0.9V48h0.9V140.7z"></path>
+            <path class="light8 light" d="M125.1,514.5h-0.9v-9.7h0.9V514.5z M125.1,243.6h-0.9v-58.9h0.9V243.6z"></path>
+            <path class="light9 light" d="M305.4,806.7h-4.6v-42.5h4.6V806.7z M305.4,398.5h-4.6v-17.3h4.6V398.5z M305.4,1080h-4.6V968.8h4.6V1080z"></path>
+            <path class="light10 light" d="M1822.9,170.7h-4.5v13.7h4.5V170.7z M1822.9,435.1h-4.5v6.8h4.5V435.1z M1822.9,55.9h-4.5v4h4.5V55.9z         M1822.9,0h-4.5v48.3h4.5V0z"></path>
+            <path class="light11 light" d="M1666.4,331.5h0.9v9.7h-0.9V331.5z M1666.4,602.4h0.9v58.9h-0.9V602.4z M1666.4,898.5h0.9v92.7h-0.9V898.5z"></path>
+            <path class="light12 light" d="M1620.4,200.7h-1.8v6.4h1.8V200.7z M1620.4,469.1h-1.8v39h1.8V469.1z M1620.4,0h-1.8v51h1.8V0z M1620.4,81.3         h-1.8V100h1.8V81.3z"></path>
+            <path class="light13 light" d="M74.8,201h-4.5v16.2h4.5V201z M74.8,512.3h-4.5v8.1h4.5V512.3z M74.8,65.8h-4.5v4.6h4.5V65.8z M74.8,0h-4.5         v56.8h4.5V0z"></path>
+            <path class="light14 light" d="M1371.2,655.3h-1.8v6.3h1.8V655.3z M1371.2,829.7h-1.8v37.9h1.8V829.7z M1371.2,1020.3h-1.8v59.7h1.8V1020.3z"></path>
+            <path class="light15 light" d="M1234.3,898.1h-0.9v-4.9h0.9V898.1z M1234.3,762.5h-0.9v-29.5h0.9V762.5z M1234.3,614.4h-0.9v-46.4h0.9V614.4z         "></path>
+            <path class="light16 light" d="M457.7,1010.8h-1.8v-18.1h1.8V1010.8z M457.7,507.5h-1.8V398h1.8V507.5z"></path>
+            <path class="light17 light" d="M330.5,170.7h-1.8v13.7h1.8V170.7z M330.5,435.1h-1.8v6.8h1.8V435.1z M330.5,55.9h-1.8v4h1.8V55.9z M330.5,0         h-1.8v48.3h1.8V0z"></path>
+        </g>
+    </svg></div> -->
+<!--
+    <div id="header" class="d-none d-md-block">
+        <div class="container" class="navbar">
+          <div class="row">
+            <div class="col-sm-2 col-md-1 logo">
+                <a href="#home">
+                    <img src="img/logo.png">
+                    
+                </a>
+
+            </div>
+            <div class="col-sm-10 col-md-11" id="nav">
+                <ul>
+
+                   <button class="button" class="btn btn-desktop btn-primary" class="round" data-toggle="button" href="#form"> 
+                      <a href="#form"> <p class="testobottone" style="margin-top:7px;"> Scarica il report</p></a>
+                    </button> 
+                    
+                </ul> 
+            </div>
+          </div>
+        </div>
+    </div>
+-->
+
+<!-- Navbar andre -->
+  <header class="container-fluid">
+    <div class="row navigazione">
+      <!-- Title qui ci metti la tua img -->
+        <div class="col-sm-2 col-md-1 logo">
+            <a href="#home">
+                <img src="img/logo.png">
+            </a>
+<!-- Group -->
+
+                <ul>
+<!-- qui metterei il bottone -->
+                    <button class="button" class="btn btn-desktop btn-primary" class="round" class="flex-box" data-toggle="button" href="#form"> 
+
+                    <a href="#form"> <p class="testobottone" style="margin-top:7px;"> Scarica il report</p></a>
+                    </button> 
+                </ul>
+
+        </div>
+    </div>
+  </header>
+
+
+
+    <div id="home" class="container-fluid fill-height" data-menu-offset="-100">
+        <div id="slider">
+            <div class="slider-item" id="slide-1">
+            <!--<video id="video" src="img/Video_Background_Landingpage.mp4" class="embed-responsive embed-responsive-16by9" loop controls poster="img/cartello1.png" > </video> -->
+                <div class="slider-overlay"></div>
+                <div class="slider-content"> 
+                    <p>Rimanere competitivi nel mercato oggi</p>
+                    <h2>Il ruolo dell'imprenditore <br> nella trasformazione digitale</h2>
+                    <style> @import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap'); 
+                    </style>
+                    <style> @import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap'); 
+                    </style>
+                    <div class="scroll-down"><a href="#features"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div id="features" class="section1" data-menu-offset="-100">
+        <div class="container"> 
+            <div class="section-heading">
+                <h2> Il cuore dell'impresa sono le persone </h2>
+                <p> L’imprenditore è l’innovation leader in grado di guidare l’azienda in questo cambiamento. </p>
+            </div>
+            <div class="col-sm-4 feature">
+                <video id="video" src="img/prova_video1.mp4" class="embed-responsive embed-responsive-16by9"  controls poster="img/cartello1.png" > </video>
+            </div>
+    <div class="section-heading">
+                <h2>La Trasformazione Digitale è difficile da quantificare</h2>
+                <p>Possedere i dati è il primo passo per concretizzare e chiarire questo cambiamento</p>
+            </div>
+
+            <div class="col-sm-4 feature">
+            <video id="video" src="img/prova_video2.mp4" class="embed-responsive embed-responsive-16by9"  controls poster="img/cartello2.png" > </video>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="section" data-menu-offset="-100">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Scarica il report</h2>
+            </div>
+            <!--
+            <div class="form-wrapper row"> 
+                <form> 
+                <a name="#form">
+                    <p><input type="text" placeholder="Nome" id="f_name"></p>
+                    <p><input type="text" placeholder="Email" id="f_email"></p>
+                    <p><input type="text" placeholder="Azienda" id="f_subject"></p>
+                    <input type="submit" value="Scarica il report" class="btn btn-outline-secondary"> 
+                </a>
+                </form>
+            </div> 
+            -->
+    
+<!-- Default form subscription -->
+<!-- 
+<script type="text/JavaScript" var submitted=false </script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if (submitted) {window.location= -->
+
+
+<form name="submit-to-google-sheet" class="text-center" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScoIcxRtSoPUR6Eb07Q3dR8W4Su9L5vtX53E6frIDrI9__csQ/formResponse" target="self" method="POST" id="form">
+
+<script>
+      const scriptURL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScoIcxRtSoPUR6Eb07Q3dR8W4Su9L5vtX53E6frIDrI9__csQ/formResponse'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <!-- Name -->
+    <input type="text" name="entry.1300218357" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Nome">
+
+    <!-- Name -->
+    <input type="text" name="entry.1315360286" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Azienda">
+
+    <!-- Email -->
+    <input type="email" name="entry.1861652891" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Sign in button -->
+    <button class="btn btn-info btn-block" type="submit"><a href="file:///Users/chiaramunarin/Desktop/quinto_export_report.pdf" download> <script> </script> Report </a></button> 
+
+</form>
+<!-- Default form subscription -->
+
+        </div>
+    </div>
+
+
+      <div id="contact" class="section" data-menu-offset="-100">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Chi siamo</h2>
+                <p style="text-align:left; font-size: 12px;"> <b>ReportLab </b>è un gruppo di studenti del <b>Politecnico di Milano</b> che, in collaborazione con <b>ImagisLab</b> - research team universitario - e <b>API</b> - Associazione Piccole Imprese - indaga il tema della Trasformazione Digitale nelle aziende italiane e restituisce una panoramica chiara del fenomeno, mappando l’opinione degli imprenditori italiani a riguardo tramite ricerca desk e in prima persona (interviste e survey). <br> I dati e gli insight riportati all’interno della ricerca sono il risultato di un lavoro di sintesi tra i diversi canali di indagine utilizzati per raccogliere informazioni.  <br> Due survey hanno raccolto l’opinione di quasi 300 laureati (provenienti dai settori di Design, comunicazione e Marketing) e di circa 70 aziende italiane per ottenere un primo input di ricerca. In secondo luogo sono stati consultati diversi report autorevoli che trattavano più verticalmente il tema della Trasformazione Digitale. Infine sono state svolte diverse interviste con stakeholder e imprenditori per raccogliere dati qualitativi che facessero riferimento ad esperienze e persone reali e che hanno guidato così il focus della ricerca.
+</p>
+            </div>
+                        </div>
+                                    </div>
+<!-- Flickity HTML init -->
+<div class="gallery js-flickity" >
+  <div class="gallery-cell" src="img/cartello1.png" ></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+  <div class="gallery-cell"></div>
+</div>
+
+<footer class="footer1">
+    <div id="footer">
+        <div class="container">
+                <div align="center">
+                <a href="https://www.linkedin.com/company/34688394/admin/"> <span class="fa-stack fa-lg">
+                      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span></a>
+                </div>
+             <div class="footer-copyright"> Alice Cassanmagnago, Filippo Collura, Lorenzo Destrieri, Chiara Munarin, Paola Sega <br> © 2019 ReportLab
+             </div>
+             <div class="logo" src="img/logo_polimi_bianco.png" > </div>
+    </div>
+        </div>
+</footer>
+<!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/slippry.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/skrollr.menu.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
